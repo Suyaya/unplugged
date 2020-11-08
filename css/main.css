@@ -83,9 +83,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 /* ==========================================================================
    Helper classes
@@ -261,3 +258,129 @@ textarea {
   }
 }
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  /* ==================== BASE STYLE===================*/
+  html{
+    width:100%;
+    color:#e2e3ed;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    padding:0;
+    margin:0;
+  }
+  /* -------------------Header------------------------- */
+  .header-wrapper {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+  }
+  .logo-wrapper {
+    background:#202322;
+    flex:100%;
+    text-align:center;
+  }
+  #logo {
+    width: 60%;
+    max-width:400px;
+    height:auto;
+  }
+  .nav-wrapper {
+    background:#202322;
+    flex:100%;
+  }
+  nav{
+    display:flex;
+    justify-content: center;
+  }
+  nav ul {
+    width:60%;
+    max-width:400px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+  }
+  .hero-wrapper {
+    flex:100%;
+    background: url(../img/hero.jpg) no-repeat center;
+    background-size:cover;
+    height:400px;
+    padding: 0 2em;
+  }
+
+  /* ------------------ main ------------------------------------- */
+
+  .main-wrapper {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+  }
+  .main-wrapper > * {
+    flex:100%;
+    padding: 2em;
+  }
+  /* ---------newsletter------- */
+  .newsletter {
+    background: #527158;
+  }
+  form {
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* --------info-------------- */
+  .info {
+    background: url(../img/info-background.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .info-wrapper, .info-content, .amenity
+   {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .amenity{
+    width:60%;
+    text-align: center;
+  }
+  
+/* ------------------------example------------------ */
+
+.example {
+  background: #527158;
+}
+figure.team {
+  margin:0;
+}
+#team {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------footer------------ */
+
+footer {
+  background:#202322;
+}
+.footer-wrapper {
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  text-align:center;
+}
+.scoial-icons {
+  display:flex;
+  flex-flow: row nowrap;
+}
+.social-icons > *{
+  margin: 0 20px;
+}
